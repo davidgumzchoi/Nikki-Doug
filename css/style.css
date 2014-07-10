@@ -1,20 +1,37 @@
+@font-face {
+	font-family: "Blanch";
+	src: url("font/blanch.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Blanch Inline";
+	src: url("font/blanch-inline.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Blanch Light";
+	src: url("font/blanch-light.otf") format("opentype");
+}
+
 body {
-	font-family: 'Open Sans';
+	font-family: "Open Sans";
 	margin: 0;
 	padding: 0;
 }
 
 nav {
-	background: url('../images/header-background.png');
+	background-color: #383838;
 	-webkit-box-shadow: 1px 0px 15px #333;
 	-moz-box-shadow: 1px 0px 15px #333;
 	box-shadow: 1px 0px 15px #333;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
 	position: fixed;
 	width: 100%;
 	z-index: 10;
 }
 
-.container {
+.navigation {
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
@@ -22,110 +39,140 @@ nav {
 	width: 960px;
 }
 
-.container li {
+.navigation li {
 	display: inline-block;
 	padding: 20px;
 }
 
-.container a {
-	color: #fff;
-	font-family: 'Pacifico';
-	font-size: 24px;
+.navigation a {
+	color: #b2b2b2;
+	font-family: "Ubuntu";
+	font-size: 16px;
 	font-weight: bold;
 	margin: 0;
 	text-decoration: none;
-	text-shadow: #2c3e50 1px 1px 0px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-.container a:hover {
-	color: #34495e;
+.navigation a:hover {
+	filter: alpha(opacity=80);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
 }
 
-#home {
-	background: url("../images/home.jpg");
-	background-attachment: fixed;
-	background-clip: initial;
-	background-origin: initial;
-	background-position: 100% 0;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 1080px;
-	position: relative;
+.navigation .home a {
+	font-family: "Blanch Inline";
+	font-size: 50px;
+	font-weight: normal;
+	line-height: 10px;
+	vertical-align: top;
 }
 
-#story {
-	background: url("../images/about.jpg");
-	background-attachment: fixed;
-	background-clip: initial;
-	background-origin: initial;
-	background-position: 100% 0;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 300px;
-	position: relative;
+section h1 {
+	font-family: "Blanch Inline";
+	font-size: 150px;
+	margin-bottom: 0;
+	text-shadow: 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
-#wedding {
-	background: url("../images/blog.jpg");
-	background-attachment: fixed;
-	background-clip: initial;
-	background-origin: initial;
-	background-position: 100% 0;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 300px;
-	position: relative;
-}
-
-#rsvp { 
-	background: url("../images/contact.jpg");
-	background-attachment: fixed;
-	background-clip: initial;
-	background-origin: initial;
-	background-position: 100% 0;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 300px;
-	position: relative;
-}
-
-#registry { 
-	background: url("../images/home.jpg");
-	background-attachment: fixed;
-	background-clip: initial;
-	background-origin: initial;
-	background-position: 100% 0;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 300px;
-	position: relative;
-}
-
-.bg_parallax h1 {
-	color: #fff;
-	font-size: 40px;
-	font-weight: bold;
-	letter-spacing: 4px;
-	line-height: 300px;
-	text-align: center;
-	text-shadow: 1px 1px 1px #000;
+section h1 i {
+	font-size: 60px;
 	vertical-align: middle;
 }
 
-.stuff {
-	margin: 25px auto;
+section h2 {
+	font-family: "Pacifico";
+	font-size: 60px;
+	margin-bottom: 40px;
+	margin-top: 0;
+}
+
+/*
+background: url("../images/about.jpg");
+background-attachment: fixed;
+background-clip: initial;
+background-origin: initial;
+background-position: 100% 0;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+*/
+
+#home {
+	background: #34495e;
+}
+
+#home h2 {
+	background: #fff;
+	color: #34495e;
+	display: inline-block;
+	font-family: "Pacifico";
+	font-size: 60px;
+	padding: 25px 50px;
+}
+
+#story,
+#wedding {
+	background: #e3ded5;
+}
+
+#story h1,
+#wedding h1 {
+	color: #db6b71;
+}
+
+#photos,
+#rsvp {
+	background: #db6b71;
+}
+
+#photos h1,
+#rsvp h1 {
+	color: #e3ded5;
+}
+
+#photos img {
+	max-height: 100px;
+}
+
+#photos .row:first-child {
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+#rsvp .container {
+	width: 600px;
+}
+
+#party,
+#registry {
+	background: #f1c40f;
+}
+
+#party h1,
+#registry h1 {
+	color: #34495e;
+}
+
+#party .container {
+	width: 600px;
+}
+
+#registry .container {
+	text-align: center;
+}
+
+.container {
+	margin: 0 auto;
+	text-align: left;
 	width: 960px;
 }
 
-.stuff h2 {
-	border-bottom: 5px solid #e74c3c;
-	color: #c0392b;
-	font-family: 'Oleo Script';
-	font-size: 32px;
-	margin-bottom: 15px;
-	text-shadow: #e74c3c 1px 1px 0px;
-}
-
-.stuff p {
-	margin-bottom: 10px;
+.wrapper {
+	color: #fff;
+	padding-top: 50px;
+	text-align: center;
 }
