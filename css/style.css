@@ -105,7 +105,7 @@ position: relative;
 	background: #34495e;
 }
 
-#home h2 {
+#home .date {
 	background: #fff;
 	color: #34495e;
 	display: inline-block;
