@@ -33,3 +33,27 @@ $(function() {
     }
   });
 });
+
+// Active Class on Click and Scroll
+$(function(){
+    var sections = {},
+        _height  = $(window).height(),
+        i        = 0;
+    
+    // Grab positions of our sections 
+    $('section').each(function(){
+        sections[this.name] = $(this).offset().top;
+    });
+
+    $(document).scroll(function(){
+        var $this = $(this),
+            pos   = $this.scrollTop();
+            
+        for(i in sections){
+            if(sections[i] > pos && sections[i] < pos + _height){
+                $('.navigation a').removeClass('active');
+                $('.navigation' + i).addClass('active');
+            }  
+        }
+    });
+});
