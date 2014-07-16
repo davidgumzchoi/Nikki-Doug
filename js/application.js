@@ -35,6 +35,7 @@ $(function() {
 });
 
 // Active Class on Click and Scroll
+// needs revising
 $(function(){
     var sections = {},
         _height  = $(window).height(),
