@@ -1,5 +1,5 @@
 // Document Window Height
-$(function(){
+$(function() {
     var windowHeight = $(window).height();
     var wrapperHeight = $('.wrapper').height();
     if(windowHeight > wrapperHeight) {                            
@@ -14,7 +14,6 @@ $(function(){
         if(windowHeight > truecontentHeight) {
             $('.wrapper').css('height', (newHeight)+'px');
         }
-
     })          
 });
 
@@ -34,27 +33,24 @@ $(function() {
   });
 });
 
-// Active Class on Click and Scroll
-// needs revising
-$(function(){
-    var sections = {},
-        _height  = $(window).height(),
-        i        = 0;
-    
-    // Grab positions of our sections 
-    $('section').each(function(){
-        sections[this.name] = $(this).offset().top;
+// Active Class on Scroll
+$(window).scroll(function() {
+  var windowScroll = $(window).scrollTop();
+  var windowHeight = $(window).height();
+  if (windowScroll >= windowHeight) {
+    $('nav').addClass('fixed');
+    $('section').each(function(i) {
+      if ($(this).position().top <= windowScroll) {
+        $('.navigation a.active').removeClass('active');
+        $('.navigation a').eq(i).addClass('active');
+      }
     });
+  } else {
+    $('nav').removeClass('fixed');
+    $('.navigation a.active').removeClass('active');
+    $('.navigation a:first').addClass('active');
+  }
+}).scroll();
 
-    $(document).scroll(function(){
-        var $this = $(this),
-            pos   = $this.scrollTop();
-            
-        for(i in sections){
-            if(sections[i] > pos && sections[i] < pos + _height){
-                $('.navigation a').removeClass('active');
-                $('.navigation' + i).addClass('active');
-            }  
-        }
-    });
-});
+// Our Story
+// Click 
