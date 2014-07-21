@@ -53,4 +53,19 @@ $(window).scroll(function() {
 }).scroll();
 
 // Our Story
-// Click 
+// Click to open
+
+// Gallery
+// Carousel for pictures
+
+// Bridal Party
+// Icons that open in lightbox with description
+
+// Wedding
+// Google map image background
+
+// Registry
+// Click honeyfund
+
+// Hashtag
+// Facebook guestlist and instagram hashtag
