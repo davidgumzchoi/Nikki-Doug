@@ -164,6 +164,26 @@ section h2 {
 	color: #e3ded5;
 }
 
+#gallery {
+	position: relative;
+}
+
+#gallery h1,
+#gallery h2 {
+	opacity: 0.25;
+	position: absolute;
+	width: 100%;
+	z-index: 5;
+}
+
+#gallery h2 {
+	bottom: 50px;
+}
+
+#gallery .wrapper {
+	padding: 0;
+}
+
 #gallery .row:first-child {
 	margin-bottom: 40px;
 	margin-top: 40px;

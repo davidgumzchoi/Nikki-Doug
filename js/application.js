@@ -1,12 +1,12 @@
 // Document Window Height
+var windowHeight = $(window).height();
+
 $(function() {
-  var windowHeight = $(window).height();
   var wrapperHeight = $('.wrapper').height();
   if (windowHeight > wrapperHeight) {
-    $('.wrapper').css({'height':($(window).height())+'px'});
+    $('.wrapper').css({'height':(windowHeight)+'px'});
   }
   $(window).resize(function() {
-    var windowHeight = $(window).height();
     var differenceHeight = windowHeight - wrapperHeight;
     var newHeight = wrapperHeight + differenceHeight;
     var truecontentHeight = $('.parallax').height();
@@ -35,7 +35,6 @@ $(function() {
 // Active Class on Scroll
 $(window).scroll(function() {
   var windowScroll = $(window).scrollTop();
-  var windowHeight = $(window).height();
   if (windowScroll >= windowHeight) {
     $('nav').addClass('fixed');
     $('section').each(function(i) {
@@ -55,18 +54,14 @@ $(window).scroll(function() {
 // Click to open
 
 // Gallery
-$("#myCarousel").carousel('pause');
-
-// background black...
-
-// img height to never be greater than window height
-
-//
+$("#myCarousel").carousel();
 
 $(function() {
-  var windowHeight = $(window).height();
-  var imageHeight = $('#gallery .active').height();
-    $('#gallery .active img').css({'height':($(window).height())+'px'});
+  var imageHeight = $('#gallery img');
+  if (imageHeight != windowHeight) {
+    $('#gallery img').css({'height':($(window).height())+'px'});
+  }
+  $()
 });
 
 // Bridal Party
