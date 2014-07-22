@@ -164,13 +164,17 @@ section h2 {
 	color: #e3ded5;
 }
 
-#gallery img {
-	max-height: 100px;
-}
-
 #gallery .row:first-child {
 	margin-bottom: 40px;
 	margin-top: 40px;
+}
+
+#gallery .carousel-control {
+	background-image: none;
+}
+
+#gallery img {
+	margin: 0 auto;
 }
 
 #registry .container {

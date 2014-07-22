@@ -1,25 +1,24 @@
 // Document Window Height
 $(function() {
+  var windowHeight = $(window).height();
+  var wrapperHeight = $('.wrapper').height();
+  if (windowHeight > wrapperHeight) {
+    $('.wrapper').css({'height':($(window).height())+'px'});
+  }
+  $(window).resize(function() {
     var windowHeight = $(window).height();
-    var wrapperHeight = $('.wrapper').height();
-    if(windowHeight > wrapperHeight) {                            
-        $('.wrapper').css({'height':($(window).height())+'px'});
-    }                                                                               
-    $(window).resize(function(){
-        var windowHeight = $(window).height();
-        var wrapperHeight = $('.wrapper').height();
-        var differenceHeight = windowHeight - wrapperHeight;
-        var newHeight = wrapperHeight + differenceHeight;
-        var truecontentHeight = $('.parallax').height();
-        if(windowHeight > truecontentHeight) {
-            $('.wrapper').css('height', (newHeight)+'px');
-        }
-    })          
+    var differenceHeight = windowHeight - wrapperHeight;
+    var newHeight = wrapperHeight + differenceHeight;
+    var truecontentHeight = $('.parallax').height();
+    if (windowHeight > truecontentHeight) {
+      $('.wrapper').css('height', (newHeight)+'px');
+    }
+  })
 });
 
 // Smooth Scrolling
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
+  $('nav a').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -56,7 +55,19 @@ $(window).scroll(function() {
 // Click to open
 
 // Gallery
-// Carousel for pictures
+$("#myCarousel").carousel('pause');
+
+// background black...
+
+// img height to never be greater than window height
+
+//
+
+$(function() {
+  var windowHeight = $(window).height();
+  var imageHeight = $('#gallery .active').height();
+    $('#gallery .active img').css({'height':($(window).height())+'px'});
+});
 
 // Bridal Party
 // Icons that open in lightbox with description
