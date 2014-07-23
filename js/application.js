@@ -54,7 +54,7 @@ $(window).scroll(function() {
 
 // Gallery
 $(function() {
-  $('#myCarousel').each(function() {
+  $('#galleryCarousel').each(function() {
     $(this).carousel({
       interval: 3000
     });
@@ -62,49 +62,36 @@ $(function() {
 });
 
 $(function() {
-  $('#gallery img').css({'height':($(window).height())+'px'});
+  $('#gallery img').css({'height':($(window).height() - 100)+'px'});
 });
 
 // Bridal Party
 // Icons that open in lightbox with description
 
 // Wedding
-
 $(function() {
   $('#weddingCarousel').each(function(){
     $(this).carousel({
       interval: false
     });
   });
-  $('#wedding .container').css({'height':($(window).height())+'px'});
-});
-
-$(function() {
-  $('button.hide-map').hide();
-  $('button.show-map').click(function() {
-    $('#wedding .row').fadeOut('slow', function() {
-      $('button.hide-map').show();
-      $('button.show-map').hide();
-      $('#wedding iframe').css({
-        'opacity':'1',
-        'z-index':'0'
-      });
-    });
-  });
-  $('button.hide-map').click(function() {
-    $('#wedding .row').fadeIn('slow', function() {
-      $('button.show-map').show();
-      $('button.hide-map').hide();
-      $('#wedding iframe').css({
-        'opacity':'0.2',
-        'z-index':'-1'
-      });
-    });
-  });
 });
 
 // Registry
-// Click honeyfund
+// On hover white border
+$("#registry .container").hover(
+function() {
+  $("#registry .container").css({
+    borderWidth: "10px",
+    borderStyle: "double",
+    borderColor: "#fff"
+  })
+},
+function() {
+  $("#registry .container").css({
+    borderWidth: "0"
+  })
+});
 
 // Hashtag
 // Facebook guestlist and instagram hashtag
