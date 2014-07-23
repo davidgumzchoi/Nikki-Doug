@@ -1,6 +1,5 @@
 // Document Window Height
 var windowHeight = $(window).height();
-
 $(function() {
   var wrapperHeight = $('.wrapper').height();
   if (windowHeight > wrapperHeight) {
@@ -39,7 +38,7 @@ $(window).scroll(function() {
     $('nav').addClass('fixed');
     $('section').each(function(i) {
       if ($(this).position().top <= windowScroll) {
-        $('.navigation a.active').removeClass('active');
+        $('.navigation a').removeClass('active');
         $('.navigation a').eq(i).addClass('active');
       }
     });
@@ -57,18 +56,55 @@ $(window).scroll(function() {
 $("#myCarousel").carousel();
 
 $(function() {
-  var imageHeight = $('#gallery img');
-  if (imageHeight != windowHeight) {
-    $('#gallery img').css({'height':($(window).height())+'px'});
-  }
-  $()
+  $('#gallery img').css({'height':($(window).height())+'px'});
 });
 
 // Bridal Party
 // Icons that open in lightbox with description
 
 // Wedding
-// Google map image background
+// carousel of ceremony and reception
+// overlapping on top of google map
+$(function() {
+  $('#wedding .container').css({'height':($(window).height())+'px'});
+});
+
+$(function() {
+  $('button.hide-map').hide();
+  $('button.show-map').click(function() {
+    $('#wedding .row').fadeOut('slow', function() {
+      $('button.hide-map').show();
+      $('button.show-map').hide();
+      $('#wedding iframe').css({
+        'opacity':'1',
+        'z-index':'0'
+      });
+    });
+  });
+  $('button.hide-map').click(function() {
+    $('#wedding .row').fadeIn('slow', function() {
+      $('button.show-map').show();
+      $('button.hide-map').hide();
+      $('#wedding iframe').css({
+        'opacity':'0.2',
+        'z-index':'-1'
+      });
+    });
+  });
+});
+
+// $('#wedding')
+//     .on('click', function(){
+//         lazyLoad('#wedding');
+//       })
+//     .on('click', '.icn-live-map', function(e){
+//       e.preventDefault();
+//       $('#festivities').children().not('iframe, .icn-history-close').fadeOut();
+//     })
+//     .on('click', '.icn-history-close', function(e){
+//       e.preventDefault();
+//       $('#festivities').children().not('iframe, .icn-history-close').fadeIn();
+//     });
 
 // Registry
 // Click honeyfund
