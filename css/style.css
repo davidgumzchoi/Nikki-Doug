@@ -1,16 +1,11 @@
 @font-face {
-	font-family: "Blanch";
-	src: url("font/blanch.otf") format("opentype");
+	font-family: "Quilline Script";
+	src: url("font/quilline-script.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Blanch Inline";
 	src: url("font/blanch-inline.otf") format("opentype");
-}
-
-@font-face {
-	font-family: "Blanch Light";
-	src: url("font/blanch-light.otf") format("opentype");
 }
 
 body {
@@ -25,12 +20,12 @@ dark blue: ;
 */
 
 nav {
-  background-color: #383838;
-  -webkit-box-shadow: 1px 0px 15px #333;
-  -moz-box-shadow: 1px 0px 15px #333;
-  box-shadow: 1px 0px 15px #333;
-  filter: alpha(opacity=70);
-  opacity: 0.7;
+	background-color: #383838;
+	-webkit-box-shadow: 1px 0px 15px #333;
+	-moz-box-shadow: 1px 0px 15px #333;
+	box-shadow: 1px 0px 15px #333;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
 	width: 100%;
 }
 
@@ -114,24 +109,37 @@ section h2 {
 
 #home {
 	background: url("../images/bg-home.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  text-shadow: 9px 8px 0px rgba(0, 0, 0, 0.15);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-shadow: 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
-#home .date {
-  border: 5px solid #fff;
-  display: inline-block;
-	font-family: "Pacifico";
-	font-size: 60px;
-  padding: 25px 40px;
-  text-shadow: 0px 1px 1px #4d4d4d;
+#home .wrapper {
+	padding-top: 200px;
 }
 
-#home .place {
-  text-shadow: 0px 1px 1px #4d4d4d;
+#home h1 {
+	font-family: "Quilline Script";
+	font-size: 80px;
+	margin: 0;
+	text-shadow: 0px 1px 1px #4d4d4d;
+}
+
+#home h4 {
+	font-family: serif;
+	font-size: 24px;
+	margin: 0;
+	text-shadow: 0px 1px 1px #4d4d4d;
+	text-transform: uppercase;
+}
+
+#home .bottom {
+	bottom: 50px;
+	margin-left: -420px;
+	left: 50%;
+	position: absolute;
 }
 
 #story {
@@ -180,16 +188,98 @@ section h2 {
 
 #wedding .container {
 	padding: 0;
-	width: 500px;
+	width: 700px;
 }
 
-#wedding button {
+#wedding .row {
+	background: #b9b0cb;
+	margin: 75px 0 0 0;
+	padding: 20px;
+}
+
+#wedding .border {
+	background: #b9b0cb;
+	border: 1px solid #fff;
+}
+
+#wedding .border.first {
+	padding: 5px;
+}
+
+#wedding p {
+	font-family: serif;
+	font-size: 12px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+#wedding .section {
+	margin: 20px 0;
+}
+
+#wedding .header {
+	margin: 10px 0;
+}
+
+#wedding h2 {
+	font-family: "Quilline Script";
+	margin: 0;
+}
+
+#wedding .show-map,
+#wedding .hide-map {
 	bottom: 50px;
 	margin-left: -48px;
 	left: 50%;
 	position: absolute;
 }
 
+#wedding .border.second {
+	padding: 30px;
+}
+
+#weddingCarousel a {
+	color: #fff;
+}
+
+#weddingCarousel a:hover {
+	text-decoration: none;
+}
+
+#wedding .item.reception {
+	height: 400px;
+	margin-top: 131px;
+}
+
+#wedding .row.reception {
+	margin: 25px auto 0;
+	width: 500px;
+}
+
+#wedding .reception h2 {
+	font-family: serif;
+	line-height: 46px;
+	text-transform: uppercase;
+}
+
+#wedding .reception .header {
+	margin: 10px 0;
+}
+
+#wedding .reception .section {
+	margin: 0;
+}
+
+#wedding .reception .section.ceremony {
+	margin-top: 15px;
+}
+
+#wedding .reception .underline {
+	border-bottom: 1px solid #fff;
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
 
 #gallery,
 #registry {

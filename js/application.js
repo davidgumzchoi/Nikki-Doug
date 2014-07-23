@@ -53,7 +53,13 @@ $(window).scroll(function() {
 // Click to open
 
 // Gallery
-$("#myCarousel").carousel();
+$(function() {
+  $('#myCarousel').each(function() {
+    $(this).carousel({
+      interval: 3000
+    });
+  });
+});
 
 $(function() {
   $('#gallery img').css({'height':($(window).height())+'px'});
@@ -63,9 +69,13 @@ $(function() {
 // Icons that open in lightbox with description
 
 // Wedding
-// carousel of ceremony and reception
-// overlapping on top of google map
+
 $(function() {
+  $('#weddingCarousel').each(function(){
+    $(this).carousel({
+      interval: false
+    });
+  });
   $('#wedding .container').css({'height':($(window).height())+'px'});
 });
 
@@ -92,19 +102,6 @@ $(function() {
     });
   });
 });
-
-// $('#wedding')
-//     .on('click', function(){
-//         lazyLoad('#wedding');
-//       })
-//     .on('click', '.icn-live-map', function(e){
-//       e.preventDefault();
-//       $('#festivities').children().not('iframe, .icn-history-close').fadeOut();
-//     })
-//     .on('click', '.icn-history-close', function(e){
-//       e.preventDefault();
-//       $('#festivities').children().not('iframe, .icn-history-close').fadeIn();
-//     });
 
 // Registry
 // Click honeyfund
