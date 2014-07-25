@@ -9,7 +9,8 @@
 }
 
 body {
-	font-family: "Open Sans";
+	font-family: "Ubuntu";
+	font-size: 16px;
 	margin: 0;
 	padding: 0;
 }
@@ -87,8 +88,8 @@ nav.fixed {
 }
 
 section h1 {
-	font-family: "Blanch Inline";
-	font-size: 150px;
+	font-family: "Quilline Script";
+	font-size: 80px;
 	margin-bottom: 0;
 	text-shadow: 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
@@ -129,9 +130,6 @@ section h2 {
 }
 
 #home h1 {
-	font-family: "Quilline Script";
-	font-size: 80px;
-	margin: 0;
 	text-shadow: 0px 1px 1px #4d4d4d;
 }
 
@@ -177,10 +175,6 @@ section h2 {
 
 #bridalparty h1 {
 	color: #34495e;
-}
-
-#bridalparty .container {
-	width: 600px;
 }
 
 #gallery {
@@ -337,22 +331,24 @@ section h2 {
 }
 
 #registry .container {
+	padding: 0;
 	text-align: center;
 	width: 700px;
 }
 
 #registry .row {
 	margin: 25px auto 50px;
-	width: 500px;
 }
 
 #registry a {
 	display: block;
 	color: #fff;
+	padding: 10px;
 }
 
 #registry a:hover {
 	text-decoration: none;
+	padding: 0;
 }
 
 #hashtag {
@@ -368,20 +364,67 @@ section h2 {
    	background: rgba(29, 41, 81, 0.5);
 }
 
-#hashtag .container {
-	width: 600px;
-}
-
 #hashtag h1 {
 	color: #fff;
+	font-family: "Blanch Inline";
+	font-size: 150px;
 }
 
 #hashtag p {
 	margin: 0;
 }
 
-#gumz {
-	bottom: 5px;
+#hashtag .instagram {
+	margin-top: 5px;
+}
+
+.btn-instagram {
+	color: #fff;
+	background-color: #3f729b;
+	border-color: rgba(0,0,0,0.2);
+	display: inline;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	width: 170px;
+}
+
+.btn-instagram:hover {
+	color: #fff;
+	background-color: #335d7e;
+}
+
+.btn-social {
+	position: relative;
+	padding-left: 38px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.btn-social :first-child {
 	position: absolute;
-	right: 5px;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 32px;
+	line-height: 30px;
+	font-size: 1.6em;
+	text-align: center;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+#hashtag .margin-top {
+	margin-top: 10px;
+}
+
+#hashtag .logo {
+	margin-top: 5px;
+}
+
+#gumz {
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	padding: 5px 0;
+	text-align: center;
 }

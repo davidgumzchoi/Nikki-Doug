@@ -79,16 +79,16 @@ $(function() {
 
 // Registry
 // On hover white border
-$("#registry .container").hover(
+$("#registry .container a").hover(
 function() {
-  $("#registry .container").css({
+  $("#registry .container a").css({
     borderWidth: "10px",
     borderStyle: "double",
-    borderColor: "#fff"
+    borderColor: "#fff" 
   })
 },
 function() {
-  $("#registry .container").css({
+  $("#registry .container a").css({
     borderWidth: "0"
   })
 });
