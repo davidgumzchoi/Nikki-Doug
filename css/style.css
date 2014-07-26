@@ -9,6 +9,7 @@
 }
 
 body {
+	color: #333;
 	font-family: "Ubuntu";
 	font-size: 16px;
 	margin: 0;
@@ -62,12 +63,11 @@ nav {
 	opacity: 0.8;
 }
 
-.navigation .home a,
-#hashtag .logo {
+.navigation .home a {
 	font-family: "Blanch Inline";
 	font-size: 50px;
 	font-weight: normal;
-	line-height: 10px;
+	line-height: 16px;
 	vertical-align: top;
 }
 
@@ -88,10 +88,13 @@ nav.fixed {
 }
 
 section h1 {
-	font-family: "Quilline Script";
-	font-size: 80px;
+	color: #b29600;
+	font-family: "Blanch Inline";
+	font-size: 150px;
 	margin-bottom: 0;
+	text-align: center;
 	text-shadow: 9px 8px 0px rgba(0, 0, 0, 0.15);
+	white-space: nowrap;
 }
 
 section h1 i {
@@ -100,10 +103,12 @@ section h1 i {
 }
 
 section h2 {
+	color: #082567;
 	font-family: "Pacifico";
-	font-size: 60px;
-	margin-bottom: 40px;
+	font-size: 40px;
 	margin-top: 0;
+	text-align: center;
+	text-shadow: 0px 1px 1px #fff;
 }
 
 .container {
@@ -111,7 +116,6 @@ section h2 {
 }
 
 .wrapper {
-	color: #fff;
 	padding-top: 50px;
 	text-align: center;
 }
@@ -126,10 +130,14 @@ section h2 {
 }
 
 #home .wrapper {
+	color: #fff;
 	padding-top: 200px;
 }
 
 #home h1 {
+	color: #fff;
+	font-family: "Quilline Script";
+	font-size: 80px;
 	text-shadow: 0px 1px 1px #4d4d4d;
 }
 
@@ -149,32 +157,30 @@ section h2 {
 }
 
 #story {
-	background: #e3ded5;
-}
-
-#story h1 {
-	color: #db6b71;
+	padding: 50px 0;
 }
 
 #story .col-md-6 {
-	height: 300px;
-	overflow: auto;
+	padding: 0 50px;
 }
 
-#story h2 {
-  text-align: center;
+#story h4 {
+	color: #aaa;
+	font-family: "Blanch Inline";
+	font-size: 40px;
+	margin-bottom: -8px;
 }
 
-#story .item {
-  display: none;
+#story h3 {
+	border-bottom: 1px solid #aaa;
+	color: #b29600;
+	font-family: "Quilline Script";
+	font-size: 60px;
+	margin: 0 0 15px;
 }
 
-#bridalparty {
-	background: #f1c40f;
-}
-
-#bridalparty h1 {
-	color: #34495e;
+#story p {
+	text-align: justify;
 }
 
 #gallery {
@@ -276,6 +282,10 @@ section h2 {
 	padding: 30px;
 }
 
+#weddingCarousel h2 {
+	color: #fff;
+}
+
 #weddingCarousel a {
 	color: #fff;
 }
@@ -322,18 +332,9 @@ section h2 {
 	margin-top: 10px;
 }
 
-#registry {
-	background: #db6b71;
-}
-
-#registry h1 {
-	color: #e3ded5;
-}
-
 #registry .container {
 	padding: 0;
 	text-align: center;
-	width: 700px;
 }
 
 #registry .row {
@@ -342,11 +343,12 @@ section h2 {
 
 #registry a {
 	display: block;
-	color: #fff;
+	color: #082567;
 	padding: 10px;
 }
 
 #registry a:hover {
+	color: #082567;
 	text-decoration: none;
 	padding: 0;
 }
@@ -362,10 +364,10 @@ section h2 {
 
 #hashtag .wrapper {
    	background: rgba(29, 41, 81, 0.5);
+   	color: #fff;
 }
 
 #hashtag h1 {
-	color: #fff;
 	font-family: "Blanch Inline";
 	font-size: 150px;
 }
@@ -385,7 +387,6 @@ section h2 {
 	display: inline;
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
-	width: 170px;
 }
 
 .btn-instagram:hover {
@@ -396,10 +397,6 @@ section h2 {
 .btn-social {
 	position: relative;
 	padding-left: 38px;
-	text-align: left;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 }
 
 .btn-social :first-child {
@@ -419,7 +416,12 @@ section h2 {
 }
 
 #hashtag .logo {
+	font-family: "Blanch Inline";
+	font-size: 50px;
+	font-weight: normal;
+	line-height: 10px;
 	margin-top: 5px;
+	vertical-align: top;
 }
 
 #gumz {

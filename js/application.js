@@ -5,14 +5,6 @@ $(function() {
   if (windowHeight > wrapperHeight) {
     $('.wrapper').css({'height':(windowHeight)+'px'});
   }
-  $(window).resize(function() {
-    var differenceHeight = windowHeight - wrapperHeight;
-    var newHeight = wrapperHeight + differenceHeight;
-    var truecontentHeight = $('.parallax').height();
-    if (windowHeight > truecontentHeight) {
-      $('.wrapper').css('height', (newHeight)+'px');
-    }
-  })
 });
 
 // Smooth Scrolling
@@ -84,7 +76,7 @@ function() {
   $("#registry .container a").css({
     borderWidth: "10px",
     borderStyle: "double",
-    borderColor: "#fff" 
+    borderColor: "#b29600" 
   })
 },
 function() {
