@@ -69,6 +69,9 @@ $(function() {
   });
 });
 
+// make directions bigger and more noticeable
+// shrink reception and wedding invite
+
 // Registry
 // On hover white border
 $("#registry .container a").hover(function() {
