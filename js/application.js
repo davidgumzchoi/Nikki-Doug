@@ -41,9 +41,6 @@ $(window).scroll(function() {
   }
 }).scroll();
 
-// Our Story
-// Click to open
-
 // Gallery
 $(function() {
   $('#galleryCarousel').each(function() {
@@ -59,21 +56,9 @@ $(function() {
 
 // Bridal Party
 // Icons that open in lightbox with description
-
-// Wedding
-$(function() {
-  $('#weddingCarousel').each(function(){
-    $(this).carousel({
-      interval: false
-    });
-  });
-});
-
-// make directions bigger and more noticeable
-// shrink reception and wedding invite
+// Or another carousel
 
 // Registry
-// On hover white border
 $("#registry .container a").hover(function() {
   $("#registry .container a").css({
     borderWidth: "10px",
@@ -85,6 +70,3 @@ $("#registry .container a").hover(function() {
     borderWidth: "0"
   })
 });
-
-// Hashtag
-// Facebook guestlist and instagram hashtag

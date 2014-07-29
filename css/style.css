@@ -220,10 +220,7 @@ section h2 {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
-
-#wedding h1 {
-	color: #db6b71;
+	color: #fff;
 }
 
 #wedding .wrapper {
@@ -232,7 +229,12 @@ section h2 {
 
 #wedding .container {
 	padding: 0;
-	width: 700px;
+}
+
+@media (min-width: 768px) {
+	#wedding .container {
+		width: 700px;
+	}
 }
 
 #wedding .row {
@@ -243,18 +245,7 @@ section h2 {
 
 #wedding .border {
 	background: #b9b0cb;
-	border: 1px solid #fff;
-}
-
-#wedding .border.first {
-	padding: 5px;
-}
-
-#wedding p {
-	font-family: serif;
-	font-size: 12px;
-	margin: 0;
-	text-transform: uppercase;
+	border: 4px double #fff;
 }
 
 #wedding .section {
@@ -266,70 +257,32 @@ section h2 {
 }
 
 #wedding h2 {
+	color: #fff;
 	font-family: "Quilline Script";
 	margin: 0;
 }
 
-#wedding .show-map,
-#wedding .hide-map {
-	bottom: 50px;
-	margin-left: -48px;
-	left: 50%;
-	position: absolute;
-}
-
-#wedding .border.second {
-	padding: 30px;
-}
-
-#weddingCarousel h2 {
-	color: #fff;
-}
-
-#weddingCarousel a {
-	color: #fff;
-}
-
-#weddingCarousel a:hover {
-	text-decoration: none;
-}
-
-#wedding .item.reception {
-	margin-top: 131px;
-}
-
-#wedding .row.reception {
-	margin: 25px auto 0;
-	width: 500px;
-}
-
-#wedding .reception h2 {
+#wedding p {
 	font-family: serif;
-	line-height: 46px;
+	font-size: 12px;
+	margin: 0;
 	text-transform: uppercase;
 }
 
-#wedding .reception .header {
-	margin: 10px 0;
+#wedding .directions {
+	border-top: 4px double #fff;
+	margin: 0 20px;
+	padding: 20px 0;
 }
 
-#wedding .reception .section {
-	margin: 0;
+#wedding .directions p {
+	font-family: "Ubuntu";
+	font-size: 16px;
+	text-transform: inherit;
 }
 
-#wedding .reception .section.ceremony {
-	margin-top: 15px;
-}
-
-#wedding .reception .underline {
-	border-bottom: 1px solid #fff;
-	display: inline-block;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-}
-
-#wedding .ceremonyDirections {
-	margin-top: 10px;
+#wedding .directions .form-group {
+	margin-top: 5px;
 }
 
 #registry .container {
