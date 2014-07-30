@@ -55,8 +55,12 @@ $(function() {
 });
 
 // Bridal Party
-// Icons that open in lightbox with description
-// Or another carousel
+// Separate bridesmaids and groomsmen or lightbox...
+// Carousel
+   // pause unless clicked
+// On hover
+   // black and white
+   // name, label, caption
 
 // Registry
 $("#registry .container a").hover(function() {
