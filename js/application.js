@@ -54,23 +54,57 @@ $(function() {
   $('#gallery img').css({'height':($(window).height() - 100)+'px'});
 });
 
-// Bridal Party
-// Separate bridesmaids and groomsmen or lightbox...
-// Carousel
-   // pause unless clicked
-// On hover
-   // black and white
-   // name, label, caption
+// BridalParty
+$(function() {
+  $('#bridesmaidsCarousel').each(function() {
+    $(this).carousel({
+      interval: false
+    });
+  });
+});
+
+$(function() {
+  $('#groomsmenCarousel').each(function() {
+    $(this).carousel({
+      interval: false
+    });
+  });
+});
+
+
+  $('.background').hover(
+    function() {
+      $('.overlay').show();
+      $('.something').css({
+        background: 'rgba(0, 0, 0, 0.2)'
+      });
+      $('.background img').css({
+        opacity: '0.2'
+      });
+    }, function() {
+      $('.overlay').hide();
+      $('.something').css({
+        background: '#082567'
+      });
+      $('.background img').css({
+        opacity: '1'
+      });
+    }
+  );
+  // on hover
+  // make image background black
+  // show text label caption
+
 
 // Registry
-$("#registry .container a").hover(function() {
-  $("#registry .container a").css({
-    borderWidth: "10px",
-    borderStyle: "double",
-    borderColor: "#b29600" 
+$('#registry .container a').hover(function() {
+  $('#registry .container a').css({
+    borderWidth: '10px',
+    borderStyle: 'double',
+    borderColor: '#b29600'
   })
 }, function() {
-  $("#registry .container a").css({
-    borderWidth: "0"
+  $('#registry .container a').css({
+    borderWidth: '0'
   })
 });

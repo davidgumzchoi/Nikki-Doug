@@ -214,6 +214,64 @@ section h2 {
 	margin: 50px auto 0;
 }
 
+#bridalparty .carousel-control {
+	background-image: none;
+}
+
+#bridalparty a {
+	text-decoration: none;
+}
+
+#bridalparty img {
+	margin: 20px;
+	height: 400px;
+}
+
+#bridalparty .carousel {
+	margin-bottom: 100px;
+}
+
+#bridalparty .background {
+	background: #082567;
+	color: #fff;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	width: 500px;
+}
+
+#bridalparty .header {
+	top: 10px;
+	left: 10px;
+	position: absolute;
+}
+
+#bridalparty .header h4 {
+	color: #aaa;
+	font-family: "Blanch Inline";
+	font-size: 40px;
+	margin: 0;
+	text-align: left;
+}
+
+#bridalparty .header h3 {
+	color: #b29600;
+	font-family: "Pacifico";
+	font-size: 40px;
+	margin: 0;
+	text-shadow: 0px 1px 1px #fff;
+}
+
+#bridalparty .overlay {
+	bottom: 50px;
+	display: none;
+	right: 10px;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	text-shadow: 0px 1px 1px #4d4d4d;
+}
+
 #wedding {
 	background: url("../images/bg-lb.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
