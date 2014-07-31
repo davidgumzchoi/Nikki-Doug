@@ -1,26 +1,22 @@
 // Document Window Height
 var windowHeight = $(window).height();
-$(function() {
-  var wrapperHeight = $('.wrapper').height();
-  if (windowHeight > wrapperHeight) {
-    $('.wrapper').css({'height':(windowHeight)+'px'});
-  }
-});
+var wrapperHeight = $('.wrapper').height();
+if (windowHeight > wrapperHeight) {
+  $('.wrapper').css({'height':(windowHeight)+'px'});
+}
 
 // Smooth Scrolling
-$(function() {
-  $('nav a').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
+$('nav a').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
     }
-  });
+  }
 });
 
 // Active Class on Scroll
@@ -42,75 +38,63 @@ $(window).scroll(function() {
 }).scroll();
 
 // Gallery
-$(function() {
-  $('#galleryCarousel').each(function() {
-    $(this).carousel({
-      interval: 3000
-    });
+$('#galleryCarousel').each(function() {
+  $(this).carousel({
+    interval: 3000
   });
 });
 
-$(function() {
-  $('#gallery img').css({'height':($(window).height() - 100)+'px'});
-});
+$('#gallery img').css({'height':($(window).height() - 120)+'px'});
 
 // BridalParty
-$(function() {
-  $('#bridesmaidsCarousel').each(function() {
-    $(this).carousel({
-      interval: false
-    });
+$('#bridesmaidsCarousel').each(function() {
+  $(this).carousel({
+    interval: false
   });
 });
 
-$('#bridesmaidsCarousel .background').hover(
-  function() {
-    $('#bridesmaidsCarousel .overlay').show();
-    $('#bridesmaidsCarousel .something').css({
-      background: 'rgba(0, 0, 0, 0.2)'
-    });
-    $('#bridesmaidsCarousel .background img').css({
-      opacity: '0.2'
-    });
-  }, function() {
-    $('#bridesmaidsCarousel .overlay').hide();
-    $('#bridesmaidsCarousel .something').css({
-      background: '#082567'
-    });
-    $('#bridesmaidsCarousel .background img').css({
-      opacity: '1'
-    });
-  }
-);
+$('#bridesmaidsCarousel .background').hover(function() {
+  $('#bridesmaidsCarousel .overlay').show();
+  $('#bridesmaidsCarousel .something').css({
+    background: 'rgba(0, 0, 0, 0.2)'
+  });
+  $('#bridesmaidsCarousel .background img').css({
+    opacity: '0.2'
+  });
+}, function() {
+  $('#bridesmaidsCarousel .overlay').hide();
+  $('#bridesmaidsCarousel .something').css({
+    background: '#082567'
+  });
+  $('#bridesmaidsCarousel .background img').css({
+    opacity: '1'
+  });
+});
 
-$(function() {
-  $('#groomsmenCarousel').each(function() {
-    $(this).carousel({
-      interval: false
-    });
+$('#groomsmenCarousel').each(function() {
+  $(this).carousel({
+    interval: false
   });
 });
 
 
-$('#groomsmenCarousel .background').hover(
-  function() {
-    $('#groomsmenCarousel .overlay').show();
-    $('#groomsmenCarousel .something').css({
-      background: 'rgba(0, 0, 0, 0.2)'
-    });
-    $('#groomsmenCarousel .background img').css({
-      opacity: '0.2'
-    });
-  }, function() {
-    $('#groomsmenCarousel .overlay').hide();
-    $('#groomsmenCarousel .something').css({
-      background: '#082567'
-    });
-    $('#groomsmenCarousel .background img').css({
-      opacity: '1'
-    });
-  }
-);
+$('#groomsmenCarousel .background').hover(function() {
+  $('#groomsmenCarousel .overlay').show();
+  $('#groomsmenCarousel .something').css({
+    background: 'rgba(0, 0, 0, 0.2)'
+  });
+  $('#groomsmenCarousel .background img').css({
+    opacity: '0.2'
+  });
+}, function() {
+  $('#groomsmenCarousel .overlay').hide();
+  $('#groomsmenCarousel .something').css({
+    background: '#082567'
+  });
+  $('#groomsmenCarousel .background img').css({
+    opacity: '1'
+  });
+});
 
 // Registry
 $('#registry .container a').hover(function() {
