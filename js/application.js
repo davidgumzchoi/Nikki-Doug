@@ -63,6 +63,26 @@ $(function() {
   });
 });
 
+$('#bridesmaidsCarousel .background').hover(
+  function() {
+    $('#bridesmaidsCarousel .overlay').show();
+    $('#bridesmaidsCarousel .something').css({
+      background: 'rgba(0, 0, 0, 0.2)'
+    });
+    $('#bridesmaidsCarousel .background img').css({
+      opacity: '0.2'
+    });
+  }, function() {
+    $('#bridesmaidsCarousel .overlay').hide();
+    $('#bridesmaidsCarousel .something').css({
+      background: '#082567'
+    });
+    $('#bridesmaidsCarousel .background img').css({
+      opacity: '1'
+    });
+  }
+);
+
 $(function() {
   $('#groomsmenCarousel').each(function() {
     $(this).carousel({
@@ -72,29 +92,25 @@ $(function() {
 });
 
 
-  $('.background').hover(
-    function() {
-      $('.overlay').show();
-      $('.something').css({
-        background: 'rgba(0, 0, 0, 0.2)'
-      });
-      $('.background img').css({
-        opacity: '0.2'
-      });
-    }, function() {
-      $('.overlay').hide();
-      $('.something').css({
-        background: '#082567'
-      });
-      $('.background img').css({
-        opacity: '1'
-      });
-    }
-  );
-  // on hover
-  // make image background black
-  // show text label caption
-
+$('#groomsmenCarousel .background').hover(
+  function() {
+    $('#groomsmenCarousel .overlay').show();
+    $('#groomsmenCarousel .something').css({
+      background: 'rgba(0, 0, 0, 0.2)'
+    });
+    $('#groomsmenCarousel .background img').css({
+      opacity: '0.2'
+    });
+  }, function() {
+    $('#groomsmenCarousel .overlay').hide();
+    $('#groomsmenCarousel .something').css({
+      background: '#082567'
+    });
+    $('#groomsmenCarousel .background img').css({
+      opacity: '1'
+    });
+  }
+);
 
 // Registry
 $('#registry .container a').hover(function() {

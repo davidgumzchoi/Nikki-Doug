@@ -72,7 +72,7 @@ nav {
 }
 
 .navigation .home a i,
-#hashtag .logo i {
+#misc .logo i {
 	font-size: 18px;
 	vertical-align: bottom;
 }
@@ -150,10 +150,7 @@ section h2 {
 }
 
 #home .bottom {
-	bottom: 50px;
-	margin-left: -420px;
-	left: 50%;
-	position: absolute;
+	padding-top: 100px;
 }
 
 #story {
@@ -214,6 +211,10 @@ section h2 {
 	margin: 50px auto 0;
 }
 
+#bridalparty {
+	padding-top: 50px;
+}
+
 #bridalparty .carousel-control {
 	background-image: none;
 }
@@ -228,7 +229,8 @@ section h2 {
 }
 
 #bridalparty .carousel {
-	margin-bottom: 100px;
+	margin: 0 auto 100px;
+	width: 525px;
 }
 
 #bridalparty .background {
@@ -364,8 +366,8 @@ section h2 {
 	padding: 0;
 }
 
-#hashtag {
-	background: url("../images/bg-hashtag.jpg") no-repeat center center fixed; 
+#misc {
+	background: url("../images/bg-misc.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -373,21 +375,21 @@ section h2 {
 	position: relative;
 }
 
-#hashtag .wrapper {
+#misc .wrapper {
    	background: rgba(29, 41, 81, 0.5);
    	color: #fff;
 }
 
-#hashtag h1 {
+#misc h1 {
 	font-family: "Blanch Inline";
 	font-size: 150px;
 }
 
-#hashtag p {
+#misc p {
 	margin: 0;
 }
 
-#hashtag .instagram {
+#misc .instagram {
 	margin-top: 5px;
 }
 
@@ -422,11 +424,11 @@ section h2 {
 	border-right: 1px solid rgba(0,0,0,0.2);
 }
 
-#hashtag .margin-top {
+#misc .margin-top {
 	margin-top: 10px;
 }
 
-#hashtag .logo {
+#misc .logo {
 	font-family: "Blanch Inline";
 	font-size: 50px;
 	font-weight: normal;
