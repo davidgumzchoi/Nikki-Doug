@@ -77,7 +77,6 @@ $('#groomsmenCarousel').each(function() {
   });
 });
 
-
 $('#groomsmenCarousel .background').hover(function() {
   $('#groomsmenCarousel .overlay').show();
   $('#groomsmenCarousel .something').css({
