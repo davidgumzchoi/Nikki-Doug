@@ -46,7 +46,7 @@ nav {
 	margin: 0;
 	text-decoration: none;
 	text-transform: uppercase;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
 }
 
 .navigation a:hover {
@@ -87,7 +87,7 @@ section h1 {
 	font-size: 150px;
 	margin-bottom: 0;
 	text-align: center;
-	text-shadow: 9px 8px 0px rgba(0, 0, 0, 0.15);
+	text-shadow: 9px 8px 0px rgba(0,0,0,0.15);
 	white-space: nowrap;
 }
 
@@ -120,7 +120,7 @@ section h2 {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	text-shadow: 9px 8px 0px rgba(0, 0, 0, 0.15);
+	text-shadow: 9px 8px 0px rgba(0,0,0,0.15);
 }
 
 #home .wrapper {
@@ -237,9 +237,9 @@ section h2 {
 }
 
 #bridalparty .header {
-	top: 10px;
 	left: 10px;
 	position: absolute;
+	top: 10px;
 }
 
 #bridalparty .header h4 {
@@ -261,9 +261,9 @@ section h2 {
 #bridalparty .overlay {
 	bottom: 50px;
 	display: none;
-	right: 10px;
 	padding: 10px;
 	position: absolute;
+	right: 10px;
 	text-align: center;
 	text-shadow: 0px 1px 1px #4d4d4d;
 }
@@ -278,7 +278,7 @@ section h2 {
 }
 
 #wedding .wrapper {
-   	background: rgba(0, 0, 0, 0.5);
+   	background: rgba(0,0,0,0.5);
 }
 
 #wedding .container {
@@ -370,7 +370,7 @@ section h2 {
 }
 
 #misc .wrapper {
-   	background: rgba(29, 41, 81, 0.5);
+   	background: rgba(29,41,81,0.5);
    	color: #fff;
 }
 
@@ -397,25 +397,25 @@ section h2 {
 }
 
 .btn-instagram:hover {
-	color: #fff;
 	background-color: #335d7e;
+	color: #fff;
 }
 
 .btn-social {
-	position: relative;
 	padding-left: 38px;
+	position: relative;
 }
 
 .btn-social :first-child {
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 32px;
-	line-height: 30px;
-	font-size: 1.6em;
-	text-align: center;
 	border-right: 1px solid rgba(0,0,0,0.2);
+	bottom: 0;
+	font-size: 1.6em;
+	left: 0;
+	line-height: 30px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 32px;
 }
 
 #misc .margin-top {

@@ -46,7 +46,7 @@ $('#galleryCarousel').each(function() {
 
 $('#gallery img').css({'height':($(window).height() - 120)+'px'});
 
-// BridalParty
+// Bridal Party
 $('#bridesmaidsCarousel').each(function() {
   $(this).carousel({
     interval: false
