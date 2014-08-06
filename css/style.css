@@ -287,12 +287,6 @@ section h2 {
 	padding: 0;
 }
 
-@media (min-width: 768px) {
-	#wedding .container {
-		width: 700px;
-	}
-}
-
 #wedding .row {
 	background: #b9b0cb;
 	margin: 35px 0 0 0;
@@ -431,6 +425,13 @@ section h2 {
 	line-height: 10px;
 	margin-top: 5px;
 	vertical-align: top;
+}
+
+@media (min-width: 768px) {
+	#wedding .container,
+	#registry .container {
+		width: 700px;
+	}
 }
 
 #gumz {
