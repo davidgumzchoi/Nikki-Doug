@@ -44,7 +44,7 @@ $('#galleryCarousel').each(function() {
   });
 });
 
-$('#gallery img').css({'height':($(window).height() - 120)+'px'});
+$('#gallery img').css({'height':($(window).height() - 100)+'px'});
 
 // Bridal Party
 $('#bridesmaidsCarousel').each(function() {
